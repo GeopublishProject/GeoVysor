@@ -1,0 +1,78 @@
+
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <org.mapsforge.map.android.view.MapView
+            android:id="@+id/mapView"
+            android:background="#AABBCC"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:id="@+id/btnTotalStats"
+                    android:layout_margin="0dp"
+                    android:text="Total"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_height="34dp"
+                    android:id="@+id/btnHourStats"
+                    android:text="Hora"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Reporte campaña"
+                    android:id="@+id/txtReportName"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="700dp"
+                android:layout_margin="0dp"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+
+
+
